@@ -1,5 +1,8 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
+syntax:glob   # This line is not needed for .gitignore files.
+*.py[cod]     # Will match .pyc, .pyo and .pyd files.
+__pycache__/  # Exclude the whole folder
 
 # IPython notebook
 .ipynb_checkpoints
+
+boston_housing/
