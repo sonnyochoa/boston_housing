@@ -13445,6 +13445,14 @@ Standard deviation of prices: $165171.13154429474
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>In this model we can predict <code>92.3%</code> of the dependent variable <code>Y</code> based on the independent variable <code>X</code>. Since this is close to <code>1</code>, we can say that this model successfully predicts the dependent variable based on the independent variable.</p>
+<p>The <strong>R2 score</strong>, or the <strong>coefficient of determination</strong>, is a useful metric that measures how well that model explains and predicts the <strong>target variables</strong>. It gives us a good indication of how well our <strong>regression model</strong> fits by comparing it to a <strong>baseline model</strong>. The baseline model <strong>always predicts the mean value</strong> for the target variable.</p>
+<p>The way to calculate the R2 score is given by <code>1 - (sum of squared errors (SSE) / sum of squared total (SST))</code>.</p>
+<ul>
+<li><p>SSE: <code>Sum of Squared Errors of our Regression model</code>.</p>
+</li>
+<li><p>SST: <code>Sum of Squared Errors of the Baseline model</code>.</p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -13525,7 +13533,7 @@ Standard deviation of prices: $165171.13154429474
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>It is import to split the dataset because our goal is to build a model that generalizes well. The testing data allows us to test how well our model performs.</p>
+<p>The benefit of splitting the dataset into training and testing sets is to check if the model generalizes well. The testing dataset allows us to test how well our model performs.</p>
 
 </div>
 </div>
