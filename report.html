@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>boston_housing</title>
+<title>boston_housing_new</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13533,7 +13533,9 @@ Standard deviation of prices: $165171.13154429474
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>The benefit of splitting the dataset into training and testing sets is to check if the model generalizes well. The testing dataset allows us to test how well our model performs.</p>
+<p>The benefit of splitting the dataset into training and testing sets is to check if the model generalizes well. The testing dataset allows you to test how well your model performs.</p>
+<p>Having a <strong>testing set</strong> allows you to check your model against data that was not used during training. This allows you to check the <code>"goodness"</code> of your model during training. You can end up with two situations which are not ideal: you can overfit our data, which is when your training data scores really well with your performance metric, since it has memorized the data, and does poorly when we use your model on the testing data; and you can underfit your data, which is when your training and testing data do poorly against your performance metric.</p>
+<p>You are looking for a model that does well in both the training and testing data, and since you don't want your testing data to influence your training data you would need to use cross-validation techniques (which is defined and discussed in detail in Question 8).</p>
 
 </div>
 </div>
